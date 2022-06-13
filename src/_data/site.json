@@ -1,0 +1,21 @@
+{
+    "name": "A11pine Forestry With Bulma",
+    "subtitle": "A refreshing, beautiful, and easy going Eleventy Starter Project",
+    "description": "Eleventy starter project that features Alpine.js, Bulma CSS, Forestry CMS, Netlify & Netlify Forms, and other sweet features that boost performance and SEO",
+    "footer": "<p> All rights reserved © 2022. <strong>A11pine Forestry</strong> by <a> href='https://GeauxWeisbeck4.dev'>Andrew Weisbeck</a> The source code is licensed <a href='http://opensource.org/licenses/mit-license.php'>MIT</a>. <a href='https://twitter.com/geauxweisbeck4'>@GeauxWeisbeck4</a>.</p>",
+    "url": "https://a11pineforestrybulma.netlify.app",
+    "githubUrl": "https://github.com/GeauxWeisbeck4/a11pine-forestry-starter",
+    "githubBranch": "main",
+    "navigationStyle": "horizontal",
+    "emoji": "🌲",
+    "enableSearch": true,
+    "enableDarkMode": true,
+    "enableEditButton": true,
+    "enableDatestamp": true,
+    "enableGithubLink": true,
+    "enableContact": false,
+    "enableNetlifyCMS": false,
+    "enableComments": false,
+    "enableEncryption": false,
+    "enablePageNavigation": true
+}

@@ -1,0 +1,37 @@
+{% block navbar %}}
+    <nav class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <img src="{{nav.navLogo}}" alt="navLogo"><span style="padding-left: 5px;">A11pine Forestry</span>
+          </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroA">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroA" class="navbar-menu">
+          <div class="navbar-end">
+            {% for navLink in nav.navLinks %}
+            <span class="navbar-item">
+            {% if navLink == "home" %}
+              <a class="navbar-item is-active" href="/">{{navLink | capitalize}}</a>
+            {% else %}
+              <a class="navbar-item" href="/{{navLink}}">{{navLink | capitalize }}</a>
+            {% endif %}
+            </span>
+            {% endfor %}
+              <a class="button is-primary is-inverted" href="/{{nav.navBtnLink}}">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>{{nav.navBtnText}}</span>
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+  {% endblock %}

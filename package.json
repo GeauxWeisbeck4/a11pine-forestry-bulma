@@ -1,0 +1,40 @@
+{
+  "name": "a11pineforestrystarter",
+  "version": "1.0.0",
+  "description": "An Eleventy starter template that includes Alpine.js, Bulma CSS, and Forestry CMS. There are also other technologies built into the webpage to help make it one wicked 11ty starter!",
+  "main": ".eleventy.js",
+  "scripts": {
+    "start": "npx @11ty/eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GeauxWeisbeck4/a11pine-forestry-starter.git"
+  },
+  "keywords": [
+    "11ty",
+    "starter",
+    "project",
+    "bulma",
+    "alpinejs",
+    "forestry",
+    "cms"
+  ],
+  "author": "Andrew Weisbeck",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GeauxWeisbeck4/a11pine-forestry-starter/issues"
+  },
+  "homepage": "https://github.com/GeauxWeisbeck4/a11pine-forestry-starter#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^1.0.1",
+    "bulma": "^0.9.4",
+    "bulma-carousel": "^4.0.24",
+    "bulma-start": "^0.0.5",
+    "bulma-steps-component": "^0.5.3",
+    "markdown-it": "^13.0.1"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-navigation": "^0.1.6"
+  }
+}

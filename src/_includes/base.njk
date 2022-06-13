@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ seo.title or title }} | {{meta.siteName}}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <!-- Homepage Carousel -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css" />
+    <script defer src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+    
+  </head>
+  <body>
+  <section class="hero is-primary is-small">
+  <!-- Hero head will stick out at the top -->
+  <div class="hero-head">
+  
+  <!-- Navigation Bar -->
+  {% include 'partials/nav.njk' %}
+
+  <div class="hero-body">
+    <div class="container has-text-centered">
+      <h1 class="title">
+        {{meta.siteName}}
+      </h1>
+      <p class="subtitle">
+        {{meta.siteDescription}} 
+      </p>
+    </div>
+  </div>
+ 
+  {% block content %}
+    {{content | safe}}
+  {% endblock %}
+
+  {% include 'partials/footer.njk'%}
